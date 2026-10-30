@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Soumya Ranjan Jena — Creative Technologist & Full Stack Software Engineer. WebGPU, WASM SIMD, Interactive 3D Shaders & High-Fidelity UI/UX Systems.">
+  <meta name="keywords" content="Soumya Ranjan Jena, Three.js, WebGL, Creative Technologist, WebGPU, WASM, Full Stack Engineer, Awwwards Portfolio, Porcelain Theme, Raurkela, India">
+  <meta name="author" content="Soumya Ranjan Jena">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f7f9fc">
+
+  <meta property="og:title" content="Soumya Ranjan Jena — Architectural Studio | Creative Technologist & Engineer">
+  <meta property="og:description" content="Interactive 3D Neural Compute Lattice, Frictionless Lenis Momentum Scrolling & High-Fidelity Project Previews.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://soumyaranjanjena.com">
+
+  <title>Soumya Ranjan Jena — Architectural Studio & Full Stack Engineer</title>
+
+  <!-- Typography: Syne, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Production CDNs: Lenis 1.1, Three.js r128, GSAP 3.12 & ScrollTrigger -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="porcelain-theme">
+
+  <!-- ═══════════ INTERACTIVE 3D NEURAL COMPUTE LATTICE ═══════════ -->
+  <div id="webgl-container" aria-hidden="true"></div>
+
+  <!-- ═══════════ LUXURY CURSOR & FLOATING PROJECT PREVIEW CARD ═══════════ -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="cursor-label" id="cursorLabel" aria-hidden="true">VIEW</div>
+
+  <!-- Dynamic Cursor-Linked Floating Work Preview -->
+  <div class="cursor-preview-modal" id="cursorPreviewModal" aria-hidden="true">
+    <div class="preview-inner">
+      <img src="" alt="Project Preview" id="cursorPreviewImg" class="preview-image">
+      <div class="preview-badge" id="cursorPreviewBadge">LIVE ARCHITECTURE</div>
+    </div>
+  </div>
+
+  <!-- ═══════════ MINIMALIST TOP ARCHITECTURAL BAR ═══════════ -->
+  <header class="studio-header">
+    <div class="studio-brand">
+      <span class="brand-monogram">SRJ</span>
+      <span class="brand-divider">/</span>
+      <span class="brand-sub">STUDIO ARCHITECTURE</span>
+    </div>
+
+    <div class="header-status">
+      <span class="status-indicator"></span>
+      <span class="status-copy">AVAILABLE FOR SELECT CONTRACTS &amp; ROLES · 2026</span>
+    </div>
+
+    <div class="header-actions">
+      <a href="mailto:jenasoumyaranjan531@gmail.com" class="header-btn magnetic-btn">
+        <span>INITIATE CONTACT</span>
+        <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════ SMOOTH SCROLL CONTAINER ═══════════ -->
+  <main class="smooth-content" id="mainContent">
+
+    <!-- ═══════════ 01. HERO / KINETIC COVER ═══════════ -->
+    <section class="section-hero" id="hero">
+      <div class="hero-top-meta">
+        <span class="meta-tag">[ 01 — IDENTITY ]</span>
+        <span class="meta-coords">22.2604° N, 84.8536° E // RAURKELA, IN</span>
+        <span class="meta-tag">[ CLIENT COMPUTE &amp; GRAPHICS ]</span>
+      </div>
+
+      <div class="hero-headline-wrap">
+        <h1 class="hero-giant-title">
+          <span class="title-row"><span class="reveal-text">SOUMYA</span></span>
+          <span class="title-row title-row-accent"><span class="reveal-text">RANJAN</span></span>
+          <span class="title-row"><span class="reveal-text">JENA</span></span>
+        </h1>
+      </div>
+
+      <div class="hero-bottom-grid">
+        <div class="hero-descriptor">
+          <p class="descriptor-lead">Creative Technologist &amp; Full Stack Software Engineer.</p>
+          <p class="descriptor-body">
+            Bridging the gap between <strong>complex neural engines</strong> and <strong>exceptional human interfaces</strong>. Specialized in client-side compute via <span class="cobalt-accent">WebGPU / WASM</span>, custom WebGL graphics, and zero-telemetry architectures.
+          </p>
+        </div>
+
+        <div class="hero-quick-stats">
+          <div class="stat-pill">
+            <span class="stat-num">4,300+</span>
+            <span class="stat-txt">KM XC ENDURANCE CYCLING</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-num">60 FPS</span>
+            <span class="stat-txt">IN-BROWSER EDGE INFERENCE</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-num">9+</span>
+            <span class="stat-txt">SHIPPED PLATFORMS</span>
+          </div>
+        </div>
+
+        <div class="hero-actions-wrap">
+          <a href="https://drive.google.com/file/d/1YLrY0IGPOzNCUEmRf7MPYz2agIXl4iWC/view" target="_blank" rel="noopener noreferrer" class="cta-pill primary-pill magnetic-btn">
+            <span>RESUME (PDF)</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="#projects" class="cta-pill ghost-pill magnetic-btn">
+            <span>EXPLORE WORKS</span>
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-cue">
+        <span class="cue-bar"></span>
+        <span class="cue-text">INTERACTIVE 3D NEURAL LATTICE BELOW</span>
+      </div>
+    </section>
+
+    <!-- ═══════════ 02. EDITORIAL STATEMENT / PHILOSOPHY ═══════════ -->
+    <section class="section-editorial" id="about">
+      <div class="section-header-row">
+        <span class="section-index">02</span>
+        <h2 class="section-label">PHILOSOPHY &amp; ARCHITECTURE</h2>
+      </div>
+
+      <div class="statement-grid">
+        <div class="statement-large">
+          <p class="editorial-p">
+            I build at the exact intersection where <strong>mathematical machine learning runtimes</strong> collide with <strong>frictionless, emotional human interface design</strong>.
+          </p>
+          <p class="editorial-p editorial-secondary">
+            No cookie-cutter templates. No sluggish corporate bloat. By compiling neural models into client-side WASM SIMD and targeting the GPU pipeline directly with WebGPU, we eliminate recurring server inference costs while ensuring absolute user privacy and zero data exfiltration.
+          </p>
+        </div>
+
+        <div class="statement-aside">
+          <div class="aside-box">
+            <div class="aside-label">DISCIPLINE TRANSFER</div>
+            <p>
+              "Physical endurance and systems engineering are identical disciplines. Logging 4,300+ km of self-supported cross-country touring on a human-powered cycle requires relentless pacing, zero panic under mechanical breakdown, and absolute focus. That exact endurance scales into maintaining high code velocity across complex distributed architectures."
+            </p>
+            <div class="aside-footer">
+              <i class="fas fa-bicycle"></i>
+              <span>1st Place Podium · 150km &amp; 116km Challenges</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 03. SPECIALIZATIONS / DOMAINS ═══════════ -->
+    <section class="section-domains" id="specializations">
+      <div class="section-header-row">
+        <span class="section-index">03</span>
+        <h2 class="section-label">ENGINEERING CAPABILITIES</h2>
+      </div>
+
+      <div class="domains-matrix">
+        <div class="domain-card" data-domain="01">
+          <div class="domain-num">/01</div>
+          <h3 class="domain-title">Client-Side Compute</h3>
+          <p class="domain-desc">Deploying WebGPU compute shaders and WebAssembly (WASM SIMD) to run parallelized mathematical calculations directly inside the user's browser pipeline.</p>
+          <div class="domain-tags"><span>WebGPU</span><span>WASM SIMD</span><span>C++ Bindings</span></div>
+        </div>
+
+        <div class="domain-card" data-domain="02">
+          <div class="domain-num">/02</div>
+          <h3 class="domain-title">Edge AI &amp; Vision</h3>
+          <p class="domain-desc">In-browser neural inference running DETR Transformers and YOLO-World with Exponential Moving Average (EMA) coordinate filtering and zero server latency.</p>
+          <div class="domain-tags"><span>TensorFlow.js</span><span>YOLO-World</span><span>DETR</span></div>
+        </div>
+
+        <div class="domain-card" data-domain="03">
+          <div class="domain-num">/03</div>
+          <h3 class="domain-title">WebGL &amp; 3D Graphics</h3>
+          <p class="domain-desc">Crafting bespoke Three.js rendering passes, custom GLSL fragment/vertex shaders, iridescent physical materials, and real-time interactive coordinate visualizers.</p>
+          <div class="domain-tags"><span>Three.js</span><span>GLSL Shaders</span><span>Post-Processing</span></div>
+        </div>
+
+        <div class="domain-card" data-domain="04">
+          <div class="domain-num">/04</div>
+          <h3 class="domain-title">High-Fidelity UI/UX</h3>
+          <p class="domain-desc">Over 5 years of commercial visual and interaction design experience. Translating Figma token design systems into sub-16ms responsive web interfaces.</p>
+          <div class="domain-tags"><span>Design Systems</span><span>Micro-Interactions</span><span>Figma</span></div>
+        </div>
+
+        <div class="domain-card" data-domain="05">
+          <div class="domain-num">/05</div>
+          <h3 class="domain-title">Native Android &amp; Media</h3>
+          <p class="domain-desc">Modern native Android development utilizing Jetpack Compose, Android Media3 (ExoPlayer), local cryptographic caching, and low-latency audio pipelines.</p>
+          <div class="domain-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>ExoPlayer</span></div>
+        </div>
+
+        <div class="domain-card" data-domain="06">
+          <div class="domain-num">/06</div>
+          <h3 class="domain-title">Zero-Telemetry Systems</h3>
+          <p class="domain-desc">Architecting offline-first desktop and mobile runtimes with zero third-party tracking, strict cryptographic integrity, and sovereign local storage.</p>
+          <div class="domain-tags"><span>Offline-First</span><span>IndexedDB</span><span>Zero-Telemetry</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 04. FEATURED WORKS (9 ORIGINAL PROJECTS RETAINED WITH HOVER PREVIEWS) ═══════════ -->
+    <section class="section-works" id="projects">
+      <div class="section-header-row">
+        <span class="section-index">04</span>
+        <h2 class="section-label">SELECTED WORKS &amp; SYSTEMS [ 09 ]</h2>
+      </div>
+
+      <div class="works-tunnel-list">
+
+        <!-- Project 1: E-WARN Systems -->
+        <article class="work-item" data-project="01" data-preview-img="https://raw.githubusercontent.com/blacksrj531/E-WARN_Systems/main/EWarn.png" data-badge="COMMERCE &amp; HARDWARE">
+          <a href="https://ewarn-systems.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">01 / 09</span>
+              <span class="work-category">HARDWARE PLATFORM</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">E-WARN Systems</h3>
+              <p class="work-summary">Premium microprocessors, precision sensors, and industrial developer accessories with real-time inventory management. An NIT Rourkela incubated commercial venture.</p>
+              <div class="work-pills">
+                <span>React + Vite</span><span>Microprocessors</span><span>Vercel Edge</span><span>AI Analytics</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 2: Matrix MCX -->
+        <article class="work-item" data-project="02" data-preview-img="https://raw.githubusercontent.com/blacksrj531/Matrix-MCX/main/MatrixMCX_Logo_Symbol.png" data-badge="INTERACTIVE RUNTIME">
+          <a href="https://github.com/blacksrj531/Matrix-MCX" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">02 / 09</span>
+              <span class="work-category">CROSS-PLATFORM RUNTIME</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">Matrix MCX</h3>
+              <p class="work-summary">High-performance cross-platform interactive interface shell and multimedia runtime that bridges retro-futuristic aesthetics with low-latency graphics pipelines on mobile displays.</p>
+              <div class="work-pills">
+                <span>Flutter Core</span><span>Dart</span><span>Kotlin Modules</span><span>Custom Shaders</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 3: Zuneify -->
+        <article class="work-item" data-project="03" data-preview-img="https://raw.githubusercontent.com/blacksrj531/my_portfolio_531/main/ZUNE_Custom_Logo.png" data-badge="ANDROID MEDIA3">
+          <a href="https://github.com/blacksrj531/Zuneify" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">03 / 09</span>
+              <span class="work-category">NATIVE MEDIA ENGINE</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">Zuneify</h3>
+              <p class="work-summary">Metro-inspired Android media streaming player powered by Android Media3 (ExoPlayer), zero-telemetry local caching, offline ID3 tag management, and auto-synced lyrics streams.</p>
+              <div class="work-pills">
+                <span>Kotlin</span><span>Jetpack Compose</span><span>Media3 ExoPlayer</span><span>Offline-First</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 4: E-WARN Vision Sphere -->
+        <article class="work-item" data-project="04" data-preview-img="https://raw.githubusercontent.com/blacksrj531/ewarn_vision_sphere/main/public/ewarn-logo.png" data-badge="EDGE COMPUTER VISION">
+          <a href="https://blacksrj531.github.io/ewarn_vision_sphere/" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">04 / 09</span>
+              <span class="work-category">NEURAL INTELLIGENCE</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">E-WARN Vision Sphere</h3>
+              <p class="work-summary">AI-powered emergency surveillance intelligence operating 100% in-browser via WebGPU and WASM SIMD. Real-time traffic, fire, and anomaly tracking with zero cloud server compute.</p>
+              <div class="work-pills">
+                <span>WebGPU</span><span>WASM SIMD</span><span>React + Vite</span><span>Tailwind</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 5: B2B SaaS Workflow Platform -->
+        <article class="work-item" data-project="05" data-badge="SAAS WORKFLOW ENGINE">
+          <a href="https://blacksrj531.github.io/SaaS_Product_Demo/" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">05 / 09</span>
+              <span class="work-category">ENTERPRISE SAAS</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">B2B SaaS Workflow Automation Platform</h3>
+              <p class="work-summary">Workflow orchestrator eliminating repetitive operational overhead across corporate software stacks through responsive analytics matrices and micro-frontend structures.</p>
+              <div class="work-pills">
+                <span>JavaScript</span><span>Automation</span><span>Responsive UI</span><span>Analytics</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 6: Nexora — AI Platform -->
+        <article class="work-item" data-project="06" data-badge="LANDING APPLICATION">
+          <a href="https://blacksrj531.github.io/Nexora/" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">06 / 09</span>
+              <span class="work-category">AI PLATFORM LANDING</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">Nexora — AI-Powered SaaS Platform</h3>
+              <p class="work-summary">Modern high-converting web landing application featuring custom interactive ROI calculators, responsive dark/light mode engine, and fluid canvas animations.</p>
+              <div class="work-pills">
+                <span>HTML5 / CSS3</span><span>Interactive State</span><span>Mobile-First</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 7: Custom ROM Interface -->
+        <article class="work-item" data-project="07" data-badge="AOSP SYSTEM ARCHITECTURE">
+          <div class="work-link">
+            <div class="work-meta">
+              <span class="work-num">07 / 09</span>
+              <span class="work-category">SYSTEM UI / AOSP</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">Custom ROM Interface</h3>
+              <p class="work-summary">Engineered system-level interface layers for selected Xiaomi Android devices, focusing on 120Hz frame stability, customized boot animations, and unified system iconography.</p>
+              <div class="work-pills">
+                <span>AOSP</span><span>Android UI</span><span>Boot Animation</span><span>Custom Iconography</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-microchip"></i></div>
+          </div>
+        </article>
+
+        <!-- Project 8: Ganesh Placements Pvt. Ltd. -->
+        <article class="work-item" data-project="08" data-preview-img="https://raw.githubusercontent.com/blacksrj531/Ganesh_Placements_PVT_LTD/main/Ganesh_logo.png" data-badge="TALENT ANALYTICS">
+          <a href="https://ganesh-placements.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">08 / 09</span>
+              <span class="work-category">ENTERPRISE RECRUITMENT</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">Ganesh Placements Pvt. Ltd.</h3>
+              <p class="work-summary">Enterprise recruitment hub matching tier-one talent with global engineering firms, backed by predictive talent analytics and accessible web forms.</p>
+              <div class="work-pills">
+                <span>React + Vite</span><span>Tailwind</span><span>Vercel Edge</span><span>Recruitment Data</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+        <!-- Project 9: Galaxy Interiors -->
+        <article class="work-item" data-project="09" data-badge="ARCHITECTURAL PORTAL">
+          <a href="https://blacksrj531.github.io/Galaxy__Interiors/" target="_blank" rel="noopener noreferrer" class="work-link">
+            <div class="work-meta">
+              <span class="work-num">09 / 09</span>
+              <span class="work-category">ARCHITECTURAL SHOWCASE</span>
+            </div>
+            <div class="work-main">
+              <h3 class="work-title">Galaxy Interiors</h3>
+              <p class="work-summary">Interior architecture &amp; structural engineering portal built with dark high-contrast aesthetic, interactive portfolio sliders, and edge static portability.</p>
+              <div class="work-pills">
+                <span>Architectural UI</span><span>Interactive Sliders</span><span>Edge Deploy</span>
+              </div>
+            </div>
+            <div class="work-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════ 05. CAREER TRAJECTORY ═══════════ -->
+    <section class="section-career" id="experience">
+      <div class="section-header-row">
+        <span class="section-index">05</span>
+        <h2 class="section-label">CAREER MILESTONES</h2>
+      </div>
+
+      <div class="career-rows">
+        <div class="career-row">
+          <div class="career-year">2026 — PRESENT</div>
+          <div class="career-info">
+            <h3 class="career-role">Freelancer / Independent Technical Professional</h3>
+            <span class="career-org">INDEPENDENT · VIRTUAL</span>
+            <p class="career-summary">• Develop custom web applications, AI Model Research projects and specialized frontend interfaces using modern framework design paradigms, integrating responsive UI elements and optimizing client-side application runtimes.</p>
+          </div>
+          <div class="career-stack">TypeScript · React 19 · WebGPU · Node.js</div>
+        </div>
+
+        <div class="career-row">
+          <div class="career-year">2025 — 2026</div>
+          <div class="career-info">
+            <h3 class="career-role">Graphic Designer</h3>
+            <span class="career-org">KIDDALE123 · BANGALORE</span>
+            <p class="career-summary">• Spearheaded commercial design collateral and products; integrated visual layouts across internal assets and optimized vector media pipelines for multi-platform delivery systems.</p>
+          </div>
+          <div class="career-stack">Vector Pipelines · Adobe CC · Visual Design</div>
+        </div>
+
+        <div class="career-row">
+          <div class="career-year">2024 — 2025</div>
+          <div class="career-info">
+            <h3 class="career-role">UI/UX &amp; Graphics Designer</h3>
+            <span class="career-org">ANCIENT CRAFT LLP · BHUBANESWAR</span>
+            <p class="career-summary">• Created user-centric design workflows and layout frames; systematically gathered design insights to restructure user navigation streams and wireframes for desktop applications.</p>
+          </div>
+          <div class="career-stack">User Navigation · Wireframing · Desktop UX</div>
+        </div>
+
+        <div class="career-row">
+          <div class="career-year">2023 — 2024</div>
+          <div class="career-info">
+            <h3 class="career-role">UI/UX Designer</h3>
+            <span class="career-org">UTKRISHT DIGITAL · BHUBANESWAR</span>
+            <p class="career-summary">• Coordinated structural layout developments and accessibility enhancements across public web nodes; balanced aesthetic parameters against loading speeds to elevate overall retainment curves.</p>
+          </div>
+          <div class="career-stack">Accessibility (a11y) · Speed Optimization · UI Layouts</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 06. EDUCATION & ATHLETICS ═══════════ -->
+    <section class="section-academic" id="education">
+      <div class="section-header-row">
+        <span class="section-index">06</span>
+        <h2 class="section-label">ACADEMIC &amp; ENDURANCE FOUNDATION</h2>
+      </div>
+
+      <div class="dual-columns">
+        <div class="academic-col">
+          <h3 class="col-heading">FORMAL COMPUTER SCIENCE EDUCATION</h3>
+          <div class="edu-card">
+            <div class="edu-badge">2020 — 2023</div>
+            <h4>B. Tech in Computer Science &amp; Engineering</h4>
+            <p class="edu-inst">Sambalpur University Institute of Information Technology</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-badge">2018 — 2019</div>
+            <h4>Advanced Certificate in Software Applications</h4>
+            <p class="edu-inst">Central Tool Room &amp; Training Center (MSME Govt. of India)</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-badge">2016 — 2018</div>
+            <h4>Diploma in Computer Science &amp; Engineering</h4>
+            <p class="edu-inst">Government Polytechnic Dhenkanal</p>
+          </div>
+        </div>
+
+        <div class="athletics-col">
+          <h3 class="col-heading">KEY ACHIEVEMENTS &amp; ENDURANCE</h3>
+          <div class="athletics-box">
+            <div class="athletics-stat">🚴 4,300+ KM</div>
+            <h4>Elite XC Endurance Athlete &amp; Cyclist</h4>
+            <p>Logged over 4,300 km of self-supported touring on a non-electric cycle. Earned 1st place podium finishes in competitive 150km and 116km multi-terrain cycling endurance challenges.</p>
+          </div>
+          <div class="athletics-box">
+            <div class="athletics-stat">🏃 100 KM</div>
+            <h4>Ultra-Marathon Trail Runner</h4>
+            <p>Successfully completed intensive 100km cross-country trail runs, translating rigorous planning, endurance, and system-level discipline to long-term software lifecycle scaling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 07. STUDIO FOOTER & CONTACT ═══════════ -->
+    <footer class="section-footer" id="contact">
+      <div class="footer-huge-cta">
+        <span class="cta-overhead">[ LET'S INITIATE CONTACT ]</span>
+        <h2 class="cta-giant-text">
+          <a href="mailto:jenasoumyaranjan531@gmail.com">START A PROJECT<span class="dot">.</span></a>
+        </h2>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <span class="col-label">DIRECT INQUIRIES</span>
+          <a href="mailto:jenasoumyaranjan531@gmail.com" class="footer-link">jenasoumyaranjan531@gmail.com</a>
+          <a href="tel:+917789056552" class="footer-link">+91 77890 56552</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-label">PROFILES &amp; CODE</span>
+          <a href="https://github.com/blacksrj531/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub / blacksrj531</a>
+          <a href="https://leetcode.com/u/soumya-ranjan-jena-5/" target="_blank" rel="noopener noreferrer" class="footer-link">LeetCode / soumya-ranjan</a>
+          <a href="https://www.linkedin.com/in/jenasoumyaranjan531/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn / jenasoumyaranjan531</a>
+          <a href="https://www.behance.net/jenasoumyaranjan531/" target="_blank" rel="noopener noreferrer" class="footer-link">Behance / Design Archive</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-label">LOCATION &amp; BASE</span>
+          <p class="footer-plain">Raurkela, Odisha, India</p>
+          <p class="footer-plain">Available Globally: Remote &amp; Hybrid</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 SOUMYA RANJAN JENA. ALL RIGHTS RESERVED.</span>
+        <span>ENGINEERED WITH THREE.JS NEURAL LATTICE · LENIS INERTIA</span>
+        <span>WCAG AAA 18:1 CONTRAST &amp; 120 FPS</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ═══════════ MINIMAL UNIFIED ACTION DOCK ═══════════ -->
+  <aside class="unified-action-dock">
+    <a href="#" id="whatsappBtn" class="dock-btn dock-whatsapp magnetic-btn" aria-label="WhatsApp Message">
+      <i class="fab fa-whatsapp"></i>
+      <span class="dock-tooltip">WhatsApp</span>
+    </a>
+    <a href="tel:+917789056552" class="dock-btn dock-call magnetic-btn" aria-label="Direct Phone Call">
+      <i class="fas fa-phone-alt"></i>
+      <span class="dock-tooltip">Direct Call</span>
+    </a>
+  </aside>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
